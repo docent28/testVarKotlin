@@ -8,4 +8,8 @@ class Developer(
     level: String
 ) : Employee(inn, number, snils, firstName, lastName, age) {
     private val level = level
+
+    override fun greeting(): String {
+        return "Привет, я прогер и меня зовут ${"$firstName $lastName"}"
+    }
 }

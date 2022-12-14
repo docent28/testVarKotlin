@@ -9,7 +9,12 @@ fun main() {
     )
 
     val arrayPerson: Array<Person> = arrayOf(IvanovPerson, PetrovEmployee, SidorovDeveloper)
-    arrayPerson.forEach {
-        it.fullName()
+
+    massGreeting(arrayPerson)
+}
+
+fun massGreeting(persons: Array<Person>) {
+    persons.forEach {
+        it.greeting()
     }
 }

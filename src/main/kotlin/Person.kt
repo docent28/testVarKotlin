@@ -6,4 +6,8 @@ open class Person(firstName: String, lastName: String, age: Int) {
     open fun fullName() {
         println(firstName + " " + lastName)
     }
+
+    open fun greeting(): String {
+        return "Привет, я человек и меня зовут ${"$firstName $lastName"}"
+    }
 }

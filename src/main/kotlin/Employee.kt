@@ -9,4 +9,8 @@ open class Employee(
     open val inn = inn
     open val number = number
     open val snils = snils
+
+    open override fun greeting(): String {
+        return "Привет, я работник и меня зовут ${"$firstName $lastName"}"
+    }
 }
